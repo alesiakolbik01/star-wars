@@ -1,0 +1,19 @@
+.about-padge.main-container {
+    min-height: 92vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.about-padge img {
+    height: 92vh;
+}
+
+.about-padge .content {
+    padding: 20px;
+}
+
+@media  screen and (max-width: 1024px) {
+    .about-padge img {
+        display: none;
+    }
+}

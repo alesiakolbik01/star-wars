@@ -1,3 +1,15 @@
+html {
+  min-height: 100%;
+}
+
+body, #root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +22,51 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  position: relative;
+  background-color: #eee;
+  min-height: 380px;
+}
+
+
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.search-bar {
+  background-color: #f4f4f475;
+    box-shadow: none;
+    box-shadow: 0 0 2px 0px #f4f4f4;
+    border: none;
+    padding: 10px;
+    outline-color: #fff;
+}
+
+.search-bar:focus {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeeea1;
+}
+
+.no-results-mes {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 50px;
 }

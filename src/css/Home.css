@@ -1,0 +1,197 @@
+/* BG*/
+
+.home-bg {
+    background: url('../assets/starwarshorizontal.jpg') black no-repeat center center /cover;
+    width: 100%;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.home-bg.light {
+    background-image: url(../assets/ls-bg.jpg);
+}
+
+.home-bg.dark {
+    background-image: url(../assets/ds-bg.jpg);
+}
+
+.btns-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1.main-title {
+    text-align: center;
+    color: #000;
+    text-shadow: 2px 4px 7px #fff;
+    text-transform: uppercase;
+    font-size: 5rem;
+    transition: 1s all; 
+}
+
+h1.light, h1.main-title.light:hover {
+  color: #96ccff;
+  text-shadow: 2px 4px 7px #fff;
+}
+
+h1.dark, h1.main-title.dark:hover {
+  color: #000;
+  text-shadow: 2px 4px 7px #fff;
+}
+
+h1.animate-text {
+  animation: textclip 2s linear infinite;
+}
+
+.main-title:hover {
+    color: #fff;
+    text-shadow: 2px 4px 7px #000;
+}
+
+@keyframes textclip {
+  to {
+    color: #fff;
+    text-shadow: 2px 4px 7px #000;
+  }
+}
+
+
+/* buttons */
+
+.home-bg button {
+    display: inline-block;
+    width: auto;
+    align-self: center;
+}
+
+.lightsaber-button {
+    background-color: rgba( 0, 0, 0, .2 );
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .lightsaber-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  
+  .lightsaber-button:hover {
+    color: #000000;
+    text-shadow: none;
+  }
+  
+  .lightsaber-button:hover::before {
+    width: 500px;
+    height: 500px;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* light side style*/
+
+  .lightsaber-button.blue {
+    box-shadow: 0 0 15px 5px #0088FF;
+  }
+
+  .lightsaber-button.blue::before {
+    background-color: #0088FF;
+  }
+
+  .lightsaber-button.blue:hover {
+    background-color: #0088FF;
+  }
+
+  /* dark side style*/
+
+  .lightsaber-button.red {
+    box-shadow: 0 0 15px 5px #FF0000;
+  }
+  
+  .lightsaber-button.red::before {
+    background-color: #FF0000;
+  }
+  
+  .lightsaber-button.red:hover {
+    background-color: #FF0000;
+  }
+
+  /* white */
+
+  .lightsaber-button.white {
+    background-color: transparent;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px 5px rgb(0 0 0 / 81%);
+  }
+  
+  .lightsaber-button.white::before {
+    background-color: #FFFFFF;
+  }
+  
+  .lightsaber-button.white:hover {
+    background-color: rgb(255 255 255 / 41%);
+    color: #000000;
+  }
+
+  /* transparent small*/
+
+  .lightsaber-button.transparent {
+    box-shadow: 0 0 2px 0px #f4f4f4;
+    border-radius: 5px;
+}
+
+.lightsaber-button.transparent:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+.lightsaber-button.small {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+  
+
+button.lightsaber-button:disabled, button.lightsaber-button:hover:disabled {
+  color: #80808042;
+  box-shadow: 0 0 2px 0px rgba( 255, 255, 255, .6 );
+  background-color: #8080802b;
+  text-shadow: 1px 1px #ffffff0f;
+}
+
+@media  screen and (max-width: 1024px) {
+
+  .home-bg {
+    background-size: contain;
+  }
+
+  h1.main-title {
+    font-size: 3rem;
+  }
+
+  .lightsaber-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+  

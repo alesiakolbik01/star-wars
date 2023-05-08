@@ -1,0 +1,44 @@
+
+.detailed-card {
+    width: 80%;
+    background-color: white;
+    padding: 143px;
+    clip-path: polygon(17% 6%, 100% 0%, 78% 100%, 0 75%);
+    background-image: url('../assets/heroes-bg.jpg');
+    border: solid 67px #ffffff47;
+    color: white;
+    position: relative;
+}
+
+.detailed-card img {
+    width: 40%;
+    border: solid 6px #999;
+    box-shadow: 3px 2px 5px 0px #99999973;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.detailed-card-wrapper {
+ flex-direction: column;
+}
+
+.detailed-card-wrapper button {
+    position: absolute;
+    top: 47px;
+    right: 46px;
+}
+
+@media screen and (max-width: 1024px) {
+    .detailed-card {
+      width: 100%;
+      border: 0px;
+      padding: 20px;
+      clip-path:none
+    }
+  
+    .detailed-card > button {
+      position: static;
+      margin-bottom: 10px;
+    }
+  }

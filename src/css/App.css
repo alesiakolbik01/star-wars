@@ -1,0 +1,62 @@
+
+.nav-main {
+  padding: 20px;
+  background-color: black;
+  color:white;
+  height: 8vh;
+}
+
+.nav-main a {
+  color:white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-main a.active {
+  border-bottom: 1px solid white;
+}
+
+.nav-main ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-main ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.theme.dark .nav-main {
+  background-color: rgb(5, 5, 5);
+  color:rgb(255, 0, 43);
+}
+
+.theme.dark a {
+  color:rgb(255, 0, 43);
+  text-shadow: 2px 2px 2px rgb(255, 0, 43);
+}
+
+.theme.dark .nav-main a.active {
+  border-bottom: 1px solid rgb(255, 0, 43);
+}
+
+.theme.light .nav-main {
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 183, 255);
+}
+
+.theme.light a {
+  color: rgb(0, 183, 255);
+  text-shadow: 2px 2px 2px #6bb4f9;
+}
+
+.theme.light .nav-main a.active {
+  border-bottom: 1px solid rgb(0, 183, 255);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-main a {
+    font-size: 0.9rem;
+}
+}
