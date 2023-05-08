@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React from "react";
 import About from '../components/About';
 import Home from '../components/Home';
@@ -45,16 +45,14 @@ class App extends React.Component {
 
   render() {
     return (
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Layout />}>
-                <Route index element={<Home handleChangeUserSide= {this.handleChangeUserSide} side={this.state.userSide}/>} />
-                <Route path="heroes" element={<Heroes path = {imagesPath.character}/>} />
-                <Route path="about" element={<About />} />
-                <Route path="*" element={<NoPage />} />
-              </Route>
-            </Routes>
-        </BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home handleChangeUserSide= {this.handleChangeUserSide} side={this.state.userSide}/>} />
+              <Route path="heroes" element={<Heroes path = {imagesPath.character}/>} />
+              <Route path="about" element={<About />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
+          </Routes>
     );
   }
 }

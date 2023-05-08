@@ -62,6 +62,8 @@ function Heroes(props) {
         case 'previous':
             getHeroes(prevPage);
             break;
+        default:
+                break;   
        }
     }
 
@@ -105,11 +107,11 @@ function Heroes(props) {
                         data.map(
                             (item, i) => {
                                 return <Card 
-                                key = {i + item.name}
-                                data = {item}
-                                index = {findItemIndexInUrlStr(item.url)}
-                                path = {props.path}
-                                onClickCard = {onClickCard}
+                                    key = {i + item.name}
+                                    data = {item}
+                                    index = {findItemIndexInUrlStr(item.url)}
+                                    path = {props.path}
+                                    onClickCard = {onClickCard}
                                 />
                             }
                         )
