@@ -1,6 +1,6 @@
 {
-  "name": "star-wars-app",
-  "version": "0.1.0",
+  "name": "star-wars",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://alesiakolbik01.github.io/star-wars",
   "dependencies": {
