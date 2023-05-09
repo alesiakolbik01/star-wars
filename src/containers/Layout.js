@@ -16,7 +16,7 @@ const Layout = (props) => {
               <NavLink id='3' to="/about">About App</NavLink>
             </li>
             <li>
-              <NavLink id='4' to="/dasddfsd">No page</NavLink>
+              <NavLink id='4' to="/error-page">No page</NavLink>
             </li>
           </ul>
         </nav>
